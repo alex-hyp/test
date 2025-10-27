@@ -9,6 +9,7 @@ class TestClass
 
 public: 
 int x;
+char c;
 
 };
 
