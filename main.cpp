@@ -4,7 +4,13 @@
 
 using namespace std;
 
+class TestClass
+{
 
+public: 
+int x;
+
+};
 
 void print_vect(vector<int> &vin)
 {
