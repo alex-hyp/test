@@ -2,6 +2,7 @@
 #include <vector>
 #include <algorithm>
 
+// Ещё коммент
 using namespace std;
 
 class TestClass
