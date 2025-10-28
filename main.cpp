@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
+// Comment
 
 // Ещё коммент
 using namespace std;
