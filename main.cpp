@@ -2,6 +2,8 @@
 #include <vector>
 #include <algorithm>
 // Comment
+
+// Ещё коммент
 using namespace std;
 
 class TestClass
