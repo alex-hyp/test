@@ -1,18 +1,17 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
-// Comment
+#include <windows.h>
 
-// Ещё коммент
+// Удалил комменты
 using namespace std;
 
 class TestClass
 {
 
-public: 
-int x;
-char c;
-
+public:
+    int x;
+    char c;
 };
 
 void print_vect(vector<int> &vin)
@@ -29,22 +28,28 @@ void print_vect(vector<int> &vin)
 int main()
 {
 
+    // Кириллица
+    SetConsoleCP(65001);
+    SetConsoleOutputCP(65001);
+
     vector<int> V = {1, 2, 3, 5, 10};
-    print_vect(V);
-
+    
     int x = 1;
-    cout << endl;
-
+    cout << endl
+         << "Начальный вектор: " << endl;
+    print_vect(V);
     while (x)
     {
-        cout << "add: ";
+        cout << "Добавить число (\"0\", чтобы закончить): ";
         cin >> x;
+        cout << endl;
 
         if (x)
         {
             V.push_back(x);
             sort(V.begin(), V.end());
             print_vect(V);
+            cout << endl;
         }
     }
 
@@ -52,4 +57,3 @@ int main()
 
     return 0;
 }
-
